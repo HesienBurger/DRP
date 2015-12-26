@@ -1,5 +1,5 @@
 author = "Heisen & A3L Development Team";
-onLoadName = "DRP Lakeside 0.0.1"; // old 0.0.2
+onLoadName = "DRP Lakeside BETA 0.0.1"; // old 0.0.2
 onLoadMission = "A Roleplay mission developed by Deluxe Roleplay.";
 loadScreen = "textures\E76_AppleGate_Lake.paa";
 joinUnassigned = 1;

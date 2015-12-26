@@ -18,13 +18,13 @@ switch (_filter) do
 {
 	case 0:
 	{
-		_ret set[count _ret,["A3LRideAlongJumper","Ride Along",150]];
-		_ret set[count _ret,["cadet_uni","Cadet  Uniform",150]]; 
-		_ret set[count _ret,["doj_uni","Corrections Uniform",150]]; 
-		_ret set[count _ret,["fto_uni","FTO Uniform",150]]; 
-		_ret set[count _ret,["lg_sheriff1","LG Sheriff Uniform",150]];
-		_ret set[count _ret,["lg_sheriffcommand1","LG Sheriff Command",150]];
-		_ret set[count _ret,["lg_command1","LG Command Uniform",150]];
+		//_ret set[count _ret,["A3LRideAlongJumper","Ride Along",150]];
+		//_ret set[count _ret,["cadet_uni","Cadet  Uniform",150]]; 
+		//_ret set[count _ret,["doj_uni","Corrections Uniform",150]]; 
+		//_ret set[count _ret,["fto_uni","FTO Uniform",150]]; 
+		//_ret set[count _ret,["lg_sheriff1","LG Sheriff Uniform",150]];
+		//_ret set[count _ret,["lg_sheriffcommand1","LG Sheriff Command",150]];
+		//_ret set[count _ret,["lg_command1","LG Command Uniform",150]];
 		//_ret set[count _ret,["A3L_Sheriff_Uniform","Temp Sheriff Uniform",150]];
 		//_ret set[count _ret,["sheriff_uni2","Temp Command Uniform",150]];
 		
@@ -61,10 +61,10 @@ switch (_filter) do
 	
 	case 3:
 	{
-		_ret set[count _ret,["lg_pd_command","LG Command Vest",200]];
-		_ret set[count _ret,["lg_pd_sheriff","LG Sheriff Vest",200]];
-		_ret set[count _ret,["lg_pd_corrections","LG Corrections Vest",200]];
-		_ret set[count _ret,["lg_pd_sert","LG SERT Vest",200]];
+		//_ret set[count _ret,["lg_pd_command","LG Command Vest",200]];
+		//_ret set[count _ret,["lg_pd_sheriff","LG Sheriff Vest",200]];
+		//_ret set[count _ret,["lg_pd_corrections","LG Corrections Vest",200]];
+		//_ret set[count _ret,["lg_pd_sert","LG SERT Vest",200]];
 		//_ret set[count _ret,["TFO_TACVEST_SHERIFF","Temp Command Vest",200]];
 		//_ret set[count _ret,["k_brown_so","Temp Sheriff Vest",200]]; 
 		//_ret set[count _ret,["jamie_corrections_vest","Temp Corrections Vest",200]];
