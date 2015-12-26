@@ -1,0 +1,13 @@
+[13:36:26 +02:00] [Thread 3602643804] extDB: Version: 35
+[13:36:26 +02:00] [Thread 3602643804] extDB: Windows Version
+[13:36:26 +02:00] [Thread 3602643804] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[13:36:26 +02:00] [Thread 3602643804] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[13:36:26 +02:00] [Thread 3602643804] Message: Note currently most/all development for extDB is done on a Linux Server
+[13:36:26 +02:00] [Thread 3602643804] Message: Torndeco: 24/01/15
+[13:36:26 +02:00] [Thread 3602643804] 
+[13:36:26 +02:00] [Thread 3602643804] extDB: Found extdb-conf.ini
+[13:36:26 +02:00] [Thread 3602643804] extDB: Detected 2 Cores, Setting up 2 Worker Threads
+[13:36:26 +02:00] [Thread 3602643804] extDB: Database Type: MySQL
+[13:36:26 +02:00] [Thread 3602643804] extDB: Database Session Pool Started
+[13:36:26 +02:00] [Thread 3602643804] extDB: DB_RAW_V3: Initialized: ADD_QUOTES True
+[13:43:12 +02:00] [Thread 3602643804] extDB: Stopping ...

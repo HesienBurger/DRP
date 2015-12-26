@@ -1,0 +1,15 @@
+[21:43:00 +02:00] [Thread 765832964] extDB: Version: 35
+[21:43:00 +02:00] [Thread 765832964] extDB: Windows Version
+[21:43:00 +02:00] [Thread 765832964] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[21:43:00 +02:00] [Thread 765832964] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[21:43:00 +02:00] [Thread 765832964] Message: Note currently most/all development for extDB is done on a Linux Server
+[21:43:00 +02:00] [Thread 765832964] Message: Torndeco: 24/01/15
+[21:43:00 +02:00] [Thread 765832964] 
+[21:43:00 +02:00] [Thread 765832964] extDB: Found extdb-conf.ini
+[21:43:00 +02:00] [Thread 765832964] extDB: Detected 2 Cores, Setting up 2 Worker Threads
+[21:43:00 +02:00] [Thread 765832964] extDB: Database Type: MySQL
+[21:43:00 +02:00] [Thread 765832964] extDB: Database Session Pool Started
+[21:43:00 +02:00] [Thread 765832964] extDB: DB_CUSTOM_V5: Loading Template Filename: C:\steam\steamapps\common\Arma 3 Server\@extDB\extDB\db_custom\altis-life-rpg-4.ini
+[22:00:36 +02:00] [Thread 4117563902] extDB: DB_CUSTOM_V5: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: Duplicate entry '76561198095480773' for key 'playerid'	[mysql_stmt_errno]: 1062	[mysql_stmt_sqlstate]: 23000	[statemnt]: INSERT INTO players (playerid, name, cash, bankacc, aliases, cop_licenses, med_licenses, civ_licenses, civ_gear, cop_gear, med_gear) VALUES(?,?,?,?,?,?,?,?,?,?,?)
+[22:00:36 +02:00] [Thread 4117563902] extDB: DB_CUSTOM_V5: Error Exception: SQL: playerInfoInsert:76561198095480773:Fredrick.V:0:50000:[["Fredrick.V"]]:[]:[]:[]:[]:[]:[]
+[14:31:25 +02:00] [Thread 765832964] extDB: Stopping ...

@@ -1,0 +1,14 @@
+LG A3L Beta 0.0.2
+
+Added: New cilent files.
+Added: Animation when restraining someone.
+Added: New spawn clothing.
+Added: Lakeside County Jail.
+Added: Shift+P airmuffs.
+
+// Added: Animation when restraining someone.
+
+Changed: 
+
+Removed:
+

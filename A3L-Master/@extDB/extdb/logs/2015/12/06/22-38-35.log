@@ -1,0 +1,15 @@
+[23:38:35 +02:00] [Thread 555593781] extDB: Version: 35
+[23:38:35 +02:00] [Thread 555593781] extDB: Windows Version
+[23:38:35 +02:00] [Thread 555593781] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[23:38:35 +02:00] [Thread 555593781] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[23:38:35 +02:00] [Thread 555593781] Message: Note currently most/all development for extDB is done on a Linux Server
+[23:38:35 +02:00] [Thread 555593781] Message: Torndeco: 24/01/15
+[23:38:35 +02:00] [Thread 555593781] 
+[23:38:35 +02:00] [Thread 555593781] extDB: Found extdb-conf.ini
+[23:38:35 +02:00] [Thread 555593781] extDB: Detected 2 Cores, Setting up 2 Worker Threads
+[23:38:35 +02:00] [Thread 555593781] extDB: LOG: Error: Failed opening file C:\steam\steamapps\common\Arma 3 Server\@extDB\extDB\logs\2015\12\06\spyglass.log for writing
+[23:38:35 +02:00] [Thread 555593781] extDB: Failed to Load Protocol
+[23:38:35 +02:00] [Thread 555593781] extDB: Database Type: MySQL
+[23:38:35 +02:00] [Thread 555593781] extDB: Database Session Pool Started
+[23:38:35 +02:00] [Thread 555593781] extDB: DB_CUSTOM_V5: Loading Template Filename: C:\steam\steamapps\common\Arma 3 Server\@extDB\extDB\db_custom\altis-life-rpg-4.ini
+[23:45:13 +02:00] [Thread 555593781] extDB: Stopping ...

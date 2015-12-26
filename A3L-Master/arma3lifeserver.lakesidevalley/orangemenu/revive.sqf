@@ -1,0 +1,1 @@
+[[name player],"life_fnc_revived",cursorTarget,FALSE] spawn life_fnc_MP;
