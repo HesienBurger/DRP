@@ -1,1 +1,0 @@
-execVM "deluxe\loop.sqf";

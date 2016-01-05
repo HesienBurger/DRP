@@ -1,1 +1,0 @@
-hint "Lakeside Repairs is a service within Lakeside Valley, which clears up the streets of Lakeside by impounding cars and helping people get back on the road.";

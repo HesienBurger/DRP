@@ -1,1 +1,0 @@
-_objs = (position (vehicle player) nearObjects 3); {_x setDamage 0} forEach _objs;
