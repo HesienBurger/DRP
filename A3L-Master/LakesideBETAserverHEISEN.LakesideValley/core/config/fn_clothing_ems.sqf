@@ -63,7 +63,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-
+			["cl3_emt_tacticalbelt","New EMS Long Range Radio Belt",300]
 		];
 	};
 };

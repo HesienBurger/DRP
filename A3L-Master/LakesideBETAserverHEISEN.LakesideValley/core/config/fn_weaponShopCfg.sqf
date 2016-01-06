@@ -71,6 +71,7 @@ switch(_shop) do
                         {
                                 ["Cop Basic",
                                         [
+											["pmc_earpiece","Earpiece Nightvision",750],
 											["dlrp_old_Tablet_Device_i",nil,750],
 											["dlrp_old_handcuffs_i",nil,1250],
 											["dlrp_id_card_i",nil,5000],
@@ -217,9 +218,10 @@ switch(_shop) do
                         {
                                 ["SERT Shop",
                                         [
+											["gign_shield","SERT Shield",1500],
 											["RH_M16A6",nil,2500],
 											["RH_30Rnd_68x43_FMJ",nil,250],
-											["RH_eotech553mag","SERT Scoperino",250],
+											["RH_eotech553mag","SERT Eotech Scope",250],
 											["RH_m16covers_f","SERT Railcovers",250],
 											["RH_saker","SERT Silencer",250],
 											["HandGrenade_Stone","Flashbang",100],
