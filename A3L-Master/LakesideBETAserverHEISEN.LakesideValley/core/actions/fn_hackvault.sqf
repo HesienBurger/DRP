@@ -7,14 +7,13 @@ cgbankvault is the variable name
 private ["_cops"];
 
 _cops = (west countSide playableUnits);
-if(_cops < 5) exitWith { hint "You need atleast 5 cops online to rob the bank..."; }; 
+if(_cops < 5) exitWith { ["You need atleast 5 cops online to rob the bank...",20,"red"] call A3L_Fnc_Msg; }; 
 
 _storename = "hi";
-
-
+//hint "You need some sort of hacking device to unlock this safe..";
 
 if(life_inv_hackingtool == 0) exitwith {
-	hint "You need some sort of hacking device to unlock this safe..";	
+	["You need some sort of hacking device to unlock this safe..",20,"red"] call A3L_Fnc_Msg;	
 };
 
 
@@ -24,7 +23,8 @@ if (cgbankvault animationPhase "d_l_Anim" == 1) exitwith {["The bank appears unl
 
 if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "d_l_Anim" == 0 ) then {
 
-	hint "You set your wireless hacking device to the vault, it should take roughly 5 minutes. You can move while hacking, though, you might make noises.";
+	//hint "You set your wireless hacking device to the vault, it should take roughly 5 minutes. You can move while hacking, though, you might make noises.";
+	["You set your wireless hacking device to the vault, it should take roughly 5 minutes. You can move while hacking, though, you might make noises.",20,"green"] call A3L_Fnc_Msg;
 	cgbankvault say "bankAlarm";
 	cgbankvault setVariable["hacking",true,true];
 

@@ -5,10 +5,10 @@ cgbankvault is the variable name
 */
 
 if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-	hint "Vault Opening Starting.";
+	["Vault Opening Starting.",20,"green"] call A3L_Fnc_Msg;
 	sleep 5;
-	hint "Vault Opened Engaged.";
+	["Vault Opened Engaged.",20,"green"] call A3L_Fnc_Msg;
 	cgbankvault animate ["d_o_Anim",1];
 } else {
-	hint "The vault appears to be locked/open already..";	
+	["The vault appears to be locked/open already..",20,"red"] call A3L_Fnc_Msg;
 };
