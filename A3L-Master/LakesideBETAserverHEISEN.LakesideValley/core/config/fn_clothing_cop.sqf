@@ -37,6 +37,7 @@ switch (_filter) do
 		_ret set[count _ret,["TRYK_H_woolhat_tan","SO/SERT Operator Hat",50]];
 		_ret set[count _ret,["TRYK_H_Bandana_wig","SERT Grey Wig",50]];
 		_ret set[count _ret,["TCG_swathelmet","SERT Operations Hat",50]];
+		_ret set[count _ret,["TRYK_R_CAP_BLK","LS Marshalls Cap",50]];
 
 	};
 	
@@ -60,6 +61,7 @@ switch (_filter) do
 		_ret set[count _ret,["highthreatvestblack","SO Code Red Vest",800]];
 		_ret set[count _ret,["DOC_Vest_Threat","CO Code Red Vest",800]];
 		_ret set[count _ret,["kaelvest_sert2_Fix","SERT Vest",800]]; 
+		_ret set[count _ret,["usms_vests_usms1","LS Marshalls Vest",800]]; 
 		_ret set[count _ret,["DOC_Vest_Tac","Corrections Vest",800]];
 		_ret set[count _ret,["CL3_Rebreather","Rebreather",800]];
 	};

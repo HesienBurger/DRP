@@ -14,10 +14,10 @@ switch (_type) do
 	case "MDMA": {20000};
 	case "meth": {20000};
 	case "coke": {20000};
-	case "driver": {500}; //Drivers License cost
+	case "driver": {5000}; //Drivers License cost
 	case "boat": {1000}; //Boating license cost
 	case "pilot": {15000}; //Pilot/air license cost
-	case "gun": {5000}; //Firearm/gun license cost
+	case "gun": {15000}; //Firearm/gun license cost
 	case "dive": {1000}; //Diving license cost
 	case "oil": {6500}; //Oil processing license cost
 	case "cair": {15000}; //Cop Pilot License cost
@@ -27,7 +27,7 @@ switch (_type) do
 	case "marijuana": {25000}; //Marijuana processing license cost
 	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost
-	case "rebel": {45000}; //Rebel license cost
+	case "rebel": {145000}; //Rebel license cost
 	case "truck": {10000}; //Truck license cost
 	case "diamond": {6500};
 	case "salt": {6500};

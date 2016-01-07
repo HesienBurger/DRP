@@ -75,7 +75,7 @@ life_firing_range = false;
 life_god = false;
 life_frozen = false;
 life_markers = false;
-
+heisen_vip = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
