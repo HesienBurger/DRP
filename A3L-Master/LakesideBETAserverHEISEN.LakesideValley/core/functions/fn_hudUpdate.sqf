@@ -99,7 +99,7 @@ _select ctrlSetText format["%1", format["%1",_gunmode]];
                   
 _battery ctrlSetText format["%1", life_battery];                   
                     
-_karma ctrlSetText format["%1", life_karma];                   
+_karma ctrlSetText format["Level %1", life_karma];                   
 
 _poop ctrlSetText format["%1", life_poop];  
 _dirt ctrlSetText format["%1", life_dirt];  

@@ -293,32 +293,19 @@ switch(_shop) do
                                 ["Rebel Pistols",
                                     [
 
-                                        ["RH_kimber_nw",nil,7000],
-                                        ["RH_7Rnd_45cal_m1911",nil,600],
-                                        ["hgun_ACPC2_F",nil,7500],
-                                        ["9Rnd_45ACP_Mag",nil,650],
-                                        ["hgun_Pistol_heavy_01_F",nil,7500],
-                                        ["11Rnd_45ACP_Mag",nil,650],
-                                        ["RH_vp70",nil,10000],
-                                        ["RH_18Rnd_9x19_VP",nil,800],  
-                                        ["RH_muzi",nil,11000],
-                                        ["RH_30Rnd_9x19_UZI",nil,800],										
-										["A3L_TaurusGold",nil,15000],
-										["A3L_TaurusMag",nil,800],									
-										["RH_Deagleg",nil,19000],
-										["RH_7Rnd_50_AE",nil,1000],									
-										["RH_Deagles",nil,17000],
-										["RH_7Rnd_50_AE",nil,1000],
-                                        ["RH_tec9",nil,20000],
-                                        ["RH_32Rnd_9x19_tec",nil,1500],
-                                        ["RH_vz61",nil,20000],
-                                        ["RH_20Rnd_32cal_vz61",nil,1500],
-                                        ["RH_g18",nil,19000],
-                                        ["RH_19Rnd_9x19_g18",nil,1500],
-                                        ["RH_33Rnd_9x19_g18",nil,1500],
-										["RH_m9",nil,7000],
-                                        ["RH_m9qd",nil,2000],
-                                        ["RH_15Rnd_9x19_M9",nil,600]
+                                        ["RH_kimber_nw",nil,57000],
+                                        ["RH_7Rnd_45cal_m1911",nil,570],
+                                        ["hgun_Pistol_heavy_01_F",nil,56000],
+                                        ["11Rnd_45ACP_Mag",nil,560],								
+										["RH_Deagleg","Golden Desert Eagle",1250000],
+										["RH_7Rnd_50_AE",nil,1250],									
+										["RH_Deagles",nil,120000],
+										["RH_7Rnd_50_AE",nil,1200],
+                                        ["RH_tec9",nil,110000],
+                                        ["RH_32Rnd_9x19_tec",nil,1100],
+                                        ["RH_g18",nil,95000],
+                                        ["RH_19Rnd_9x19_g18",nil,9500],
+                                        ["RH_33Rnd_9x19_g18",nil,9500]
 										
                                     ]
                                 ];
@@ -337,18 +324,16 @@ switch(_shop) do
                                 ["Rebel Primarys",
                                     [
                             
-										["A3L_AK47",nil,350000],
-										["A3L_AK47Mag",nil,500],
-										["A3L_AK47s",nil,310000],
-										["A3L_AK47sMag",nil,100],
-                                        ["hgun_PDW2000_F",nil,85000],
-										["30Rnd_9x21_Mag",nil,2000],
-                                        ["SMG_02_F",nil,85000],
-										["30Rnd_9x21_Mag",nil,4000],
-                                        ["RH_sbr9_des",nil,125000],
-										["RH_32Rnd_9mm_M822",nil,1000],
-                                        ["chakFNP90_50rnd_skin1",nil,135000],
-                                        ["chakFNP90_57x28_B_skin1",nil,100]
+										["A3L_AK47",nil,450000],
+										["A3L_AK47Mag",nil,4500],
+										["A3L_AK47s",nil,375000],
+										["A3L_AK47sMag",nil,3750],
+                                        ["SMG_02_F",nil,285000],
+										["30Rnd_9x21_Mag",nil,2850],
+                                        ["RH_sbr9_des",nil,325000],
+										["RH_32Rnd_9mm_M822",nil,3250],
+                                        ["chakFNP90_50rnd_skin1",nil,315000],
+                                        ["chakFNP90_57x28_B_skin1",nil,3150]
 
                                     ]
                              ];
