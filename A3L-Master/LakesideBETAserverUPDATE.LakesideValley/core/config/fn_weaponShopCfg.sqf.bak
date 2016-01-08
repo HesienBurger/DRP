@@ -1,0 +1,553 @@
+#include <macro.h>
+/*
+        File: fn_weaponShopCfg.sqf
+        Author: Bryan "Tonic" Boardwine
+		Edited by: "Heisen"
+       
+        Description:
+        Master configuration file for the weapon shops.
+       
+        Return:
+        String: Close the menu
+        Array:
+        [Shop Name,
+        [ //Array of items to add to the store
+                [classname,Custom Name (set nil for default),price]
+        ]]
+*/
+private["_shop"];
+_shop = [_this,0,"",[""]] call BIS_fnc_param;
+if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
+
+switch(_shop) do
+{
+        case "med_supplies":
+        {
+                switch (true) do
+                {
+                        case (playerSide != independent): {"You are not an EMS"};
+                        default 
+						{
+                                ["EMS Supplies Shop",
+                                        [
+                                            ["FirstAidKit",nil,100],
+                                            ["Medikit",nil,100],
+                                            ["ToolKit",nil,100]
+                                        ]
+                                ];
+                        };
+           		   };
+        };
+		
+		case "med_basic":
+        {
+                switch (true) do
+                {
+                        case (playerSide != independent): {"You are not an EMS"};
+                        default 
+						{
+                                ["EMS Basic Shop",
+                                        [
+											["dlrp_old_Tablet_Device_i",nil,750],
+                                            ["A3L_Extinguisher",nil,120],
+                                            ["tf_anprc152",nil,50],
+                                            ["tf_rt1523g",nil,50],
+                                            ["ItemGPS",nil,20],
+                                            ["ItemMap",nil,1],
+                                            ["Binocular",nil,200],
+											["NVGoggles",nil,500]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "cop_essential":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+                        default
+                        {
+                                ["LEO Essential Items",
+                                        [
+												["dlrp_old_Tablet_Device_i",nil,750],
+												["dlrp_old_handcuffs_i",nil,1250],
+												["dlrp_id_card_i",nil,5000],
+										
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,0],
+										        ["26_cartridge",nil,0],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+												
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "cop_1":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+                        default
+                        {
+                                ["Level 1 Cop",
+                                        [
+												["dlrp_old_Tablet_Device_i",nil,750],
+												["dlrp_old_handcuffs_i",nil,1250],
+												["dlrp_id_card_i",nil,5000],
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+	    case "cop_2":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 2): {" You are not level 2 cop"};
+                        default
+                        default
+                        {
+                                ["Level 2 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "cop_3":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 3): {" You are not level 3 cop"};
+                        default
+                        default
+                        {
+                                ["Level 3 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+												["RH_g17",nil,1500],
+												["RH_17Rnd_9x19_g17",nil,333],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+	    case "cop_4":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 4): {" You are not level 4 cop"};
+                        default
+                        default
+                        {
+                                ["Level 4 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+												["RH_g17",nil,1500],
+												["RH_17Rnd_9x19_g17",nil,333],
+												
+												["AG_MP9",nil,3500],
+												["30Rnd_45ACP_Mag_SMG_01",nil,777],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+	    case "cop_5":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 5): {" You are not level 5 cop"};
+                        default
+                        default
+                        {
+                                ["Level 5 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+												["RH_g17",nil,1500],
+												["RH_17Rnd_9x19_g17",nil,333],
+												
+												["AG_MP9",nil,3500],
+												["30Rnd_45ACP_Mag_SMG_01",nil,777],
+												
+												["RH_sbr9",nil,5500],
+												["RH_32Rnd_9mm_M822",nil,1222],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "cop_6":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 6): {" You are not level 6 cop"};
+                        default
+                        default
+                        {
+                                ["Level 6 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+												["RH_g17",nil,1500],
+												["RH_17Rnd_9x19_g17",nil,333],
+												
+												["AG_MP9",nil,3500],
+												["30Rnd_45ACP_Mag_SMG_01",nil,777],
+												
+												["RH_sbr9",nil,5500],
+												["RH_32Rnd_9mm_M822",nil,1222],
+												
+												["hlc_rifle_M4",nil,7500],
+												["30Rnd_556x45_Stanag",nil,1666],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "cop_7":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not a cop!"};
+						case (__GETC__(life_coplevel) < 7): {" You are not level 7 cop"};
+                        default
+                        default
+                        {
+                                ["Level 7 Cop",
+                                        [
+												["FirstAidKit",nil,250],
+												["Medikit",nil,500],
+												["ToolKit",nil,500],
+												
+												["Taser_26",nil,900],
+										        ["26_cartridge",nil,200],
+												
+												["RH_m9",nil,1500],
+												["RH_15Rnd_9x19_M9",nil,333],
+												
+												["RH_g17",nil,1500],
+												["RH_17Rnd_9x19_g17",nil,333],
+												
+												["AG_MP9",nil,3500],
+												["30Rnd_45ACP_Mag_SMG_01",nil,777],
+												
+												["RH_sbr9",nil,5500],
+												["RH_32Rnd_9mm_M822",nil,1222],
+												
+												["hlc_rifle_M4",nil,7500],
+												["30Rnd_556x45_Stanag",nil,1666],
+												
+												["RH_M16A4",nil,9500],
+												["RH_30Rnd_556x45_M855A1",nil,2111],
+												
+                                                ["Radar_Gun",nil,100],
+												
+                                                ["Binocular",nil,150],
+                                                ["ItemGPS",nil,100],
+                                                
+                                                ["NVGoggles",nil,500],
+												["optic_LRPS",nil,500],
+												
+                                                ["tf_anprc152",nil,100],
+												["tf_rt1523g",nil,300]
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "rebel_low":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        case (!license_civ_rebel): {"What you think you're doing mate? Get out of here before i shoot your fucking dick off m8"};
+                        default
+                        {
+                                ["Rebel Pistols",
+                                    [
+
+                                        ["RH_kimber_nw",nil,37000],
+                                        ["RH_7Rnd_45cal_m1911",nil,600],								
+										["RH_Deagleg",nil,59000],
+										["RH_7Rnd_50_AE",nil,1000],									
+										["RH_Deagles",nil,57000],
+										["RH_7Rnd_50_AE",nil,1000],
+                                        ["RH_tec9",nil,50000],
+                                        ["RH_32Rnd_9x19_tec",nil,1500],
+                                        ["RH_g18",nil,59000],
+                                        ["RH_19Rnd_9x19_g18",nil,1500],
+                                        ["RH_33Rnd_9x19_g18",nil,1500],
+										
+                                    ]
+                                ];
+                        };
+                };
+        };
+		
+		case "rebel_high":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        case (!license_civ_rebel): {"What you think you're doing mate? Get out of here before i shoot your fucking dick off m8"};
+                        default
+                        {
+                                ["Rebel Primarys",
+                                    [
+                            
+										["A3L_AK47",nil,250000],
+										["A3L_AK47Mag",nil,500],
+										["A3L_AK47s",nil,210000],
+										["A3L_AK47sMag",nil,100],
+                                        ["hgun_PDW2000_F",nil,75000],
+										["30Rnd_9x21_Mag",nil,2000],
+                                        ["SMG_02_F",nil,125000],
+										["30Rnd_9x21_Mag",nil,4000],
+                                        ["RH_sbr9_des",nil,125000],
+										["RH_32Rnd_9mm_M822",nil,1000],
+                                        ["chakFNP90_50rnd_skin1",nil,350000],
+                                        ["chakFNP90_57x28_B_skin1",nil,100]
+
+                                    ]
+                             ];
+                        };
+                };
+        };
+		
+		 case "gun":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        case (!license_civ_gun): {"You don't have a Firearms license!"};
+                        default
+                        {
+                                ["Kaels Firearms",
+                                        [
+                                                ["RH_g17",nil,23500],
+                                                ["RH_g19",nil,250],
+                                                ["RH_g19t",nil,22000],
+                                                ["RH_17Rnd_9x19_g17",nil,50],
+                                                ["RH_m9",nil,23000],
+                                                ["RH_15Rnd_9x19_M9",nil,50],
+                                                ["hgun_Rook40_F",nil,22500],
+                                                ["16Rnd_9x21_Mag",nil,50],
+												["RH_mk2",nil,32500],
+                                                ["RH_10Rnd_22LR_mk2",nil,50],
+												["RH_m9c",nil,22500],
+                                                ["RH_15Rnd_9x19_M9",nil,50],
+                                                ["hgun_P07_F",nil,13500],
+                                                ["16Rnd_9x21_Mag",nil,50],
+                                                ["RH_gsh18",nil,42800],
+                                                ["RH_18Rnd_9x19_gsh",nil,50]
+
+
+                                        ]
+                                ];
+                        };
+                };
+        };
+		
+		case "rifle":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        case (!license_civ_rifle): {"You don't have a Rifle license!"};
+                        default
+                        {
+                                ["Hunting Rifle Shop",
+                                        [
+                                                ["A3L_CZ550",nil,25000],
+                                                ["A3L_CZ550mag",nil,350],
+                                                ["A3L_CZ550Scope",nil,100],
+                                                ["arifle_SDAR_F","Turtle ONLY Harpoon",15000],
+                                                ["20Rnd_556x45_UW_mag","Underwater magazine",250]
+                                        ]
+                                ];
+                        };
+                };
+        };      
+		
+		case "genstore":
+        {
+                ["General Store",
+                        [
+								["dlrp_old_Tablet_Device_i",nil,750],
+                                ["ItemMap",nil,1],
+                                ["tf_anprc152",nil,100],
+                                ["Binocular",nil,100],
+                                ["tf_microdagr",nil,50],
+                                ["ToolKit",nil,250],
+                                ["ItemCompass",nil,100],
+								["NVGoggles_mas_h",nil,5000],
+                                ["NVGoggles_OPFOR",nil,5000],
+                                ["NVGoggles",nil,5000],
+                                ["Chemlight_red",nil,50],
+                                ["Chemlight_yellow",nil,50],
+                                ["Chemlight_green",nil,50],
+                                ["Chemlight_blue",nil,50],
+								["CG_PICKAXE","Pickaxe(Rocket Launcher Slot)",50],
+								["cg_scythe","Stick of Death(Rocket Launcher Slot)",50],
+								["CG_BAT","Bat(Rocket Launcher Slot)",50],
+								["CG_CROSS","Holy Cross(Rocket Launcher Slot)",50],
+								["cg_machete","Machete(Rocket Launcher Slot)",50],
+								["cg_hatchet","Hatchet(Rocket Launcher Slot)",50],
+                                ["A3L_ChainSaw","Chainsaw(Primary Slot)",50],
+                                ["A3L_JackHammer","Jack Hammer(Primary Slot)",50],
+                                ["A3L_Shovel","Shovel(Primary Slot)",50],
+                                ["A3L_Hammer","Hammer(Secondary Slot)",50],
+                                ["A3L_Spanner","Spanner(Secondary Slot)",50],
+                                ["A3L_Sign2","Weed Sign(Secondary Slot)",50],
+                                ["A3L_Sign","Police Sign(Secondary Slot)",50],
+                                ["Tv_Camera","TV Camera(Secondary Slot)",50]
+                        ]
+                ];
+        };
+};
